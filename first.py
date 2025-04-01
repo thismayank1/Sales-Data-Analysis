@@ -4,14 +4,11 @@ import seaborn as sns
 import streamlit as st
 
 # Analyze a given sales dataset to extract insights like total revenue, best-selling products, and monthly trends.
-
 # Load dataset
 file_path = r'C:\Users\91620\OneDrive\Desktop\New 2025\sales_data.csv'
 df = pd.read_csv(file_path)
-
 # Streamlit App
 st.title("Sales Data Analysis Dashboard")
-
 # Data Cleaning
 # Drop duplicates
 df.drop_duplicates(inplace=True)
