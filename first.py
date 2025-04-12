@@ -18,7 +18,7 @@ df.dropna(inplace=True)
 # Convert date column to datetime if applicable
 if 'Sale_Date' in df.columns:
     df['Sale_Date'] = pd.to_datetime(df['Sale_Date'])
-    df['Month'] = df['Sale_Date'].dt.to_period('M')  # Extracting month for trend analysis
+    df['Month'] = df['Sale_Date'].dt.to_period('M') 
 
 # Display basic information
 st.subheader("Initial Dataset Info")
